@@ -33,28 +33,28 @@
 	</properties>
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>flatten-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-eclipse-plugin</artifactId>
-				<version>${maven-eclipse-plugin.version}</version>
-				<configuration>
-					<useProjectReferences>false</useProjectReferences>
-					<additionalConfig>
-						<file>
-							<name>.settings/org.eclipse.jdt.ui.prefs</name>
-							<location>${maven.multiModuleProjectDirectory}/eclipse/org.eclipse.jdt.ui.prefs</location>
-						</file>
-						<file>
-							<name>.settings/org.eclipse.jdt.core.prefs</name>
-							<location>${maven.multiModuleProjectDirectory}/eclipse/org.eclipse.jdt.core.prefs</location>
-						</file>
-					</additionalConfig>
-				</configuration>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.codehaus.mojo</groupId>-->
+<!--				<artifactId>flatten-maven-plugin</artifactId>-->
+<!--			</plugin>-->
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-eclipse-plugin</artifactId>-->
+<!--				<version>${maven-eclipse-plugin.version}</version>-->
+<!--				<configuration>-->
+<!--					<useProjectReferences>false</useProjectReferences>-->
+<!--					<additionalConfig>-->
+<!--						<file>-->
+<!--							<name>.settings/org.eclipse.jdt.ui.prefs</name>-->
+<!--							<location>${maven.multiModuleProjectDirectory}/eclipse/org.eclipse.jdt.ui.prefs</location>-->
+<!--						</file>-->
+<!--						<file>-->
+<!--							<name>.settings/org.eclipse.jdt.core.prefs</name>-->
+<!--							<location>${maven.multiModuleProjectDirectory}/eclipse/org.eclipse.jdt.core.prefs</location>-->
+<!--						</file>-->
+<!--					</additionalConfig>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${maven-compiler-plugin.version}</version>
